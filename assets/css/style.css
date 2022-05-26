@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5fcf80;
+  background: #192e70;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #7ed899;
+  background: #1c3da6;
   color: #fff;
 }
 .back-to-top.active {
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #5fcf80;
+  border: 6px solid #192e70;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -166,6 +166,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
 /**
 * Desktop Navigation 
 */
@@ -182,30 +185,50 @@ h1, h2, h3, h4, h5, h6 {
 .navbar li {
   position: relative;
 }
+.navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 12px;
+}
 .navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
+  padding: 0 3px;
   font-size: 15px;
-  font-weight: 500;
-  color: black;
+  font-weight: 600;
   white-space: nowrap;
   transition: 0.3s;
+  color: rgb(33, 32, 32);
+  position: relative;
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -7px;
+  left: 0;
+  background-color: #747F8A;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #192e70;
 }
 .navbar .dropdown ul {
-  display: block;
+  display: table-caption;
   position: absolute;
-  left: 30px;
+  left: 12px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -215,7 +238,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-  border-radius: 4px;
 }
 .navbar .dropdown ul li {
   min-width: 200px;
@@ -225,12 +247,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
+  color: #150517;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #5fcf80;
+  color: #747F8A;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -735,6 +758,13 @@ section {
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #eef0ef;
+  height: 70vh;
+  border-radius: 5%;
+}
+
+.staff-img {
+  border-radius: 50%;
+  padding: 5%;
 }
 .trainers .member img {
   margin: -1px -1px 30px -1px;
@@ -766,7 +796,7 @@ section {
   transition: 0.3s;
 }
 .trainers .member .social a:hover {
-  color: #5fcf80;
+  color: #192e70;
 }
 .trainers .member .social i {
   font-size: 18px;
@@ -1305,7 +1335,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #5fcf80;
+  color: #192e70;
   font-size: 18px;
   line-height: 1;
 }
@@ -1325,7 +1355,7 @@ section {
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #5fcf80;
+  color: #172e79;
 }
 #footer .footer-newsletter {
   font-size: 15px;
@@ -1360,25 +1390,25 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #5fcf80;
+  background: #192e70;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #3ac162;
+  background: #192e70;
 }
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
 }
 #footer .credits a {
-  color: #3ac162;
+  color: #192e70;
   transition: 0.3s;
 }
 #footer .credits a:hover {
-  color: #5fcf80;
+  color: #0940f6;
 }
 #footer .social-links a {
   font-size: 18px;
