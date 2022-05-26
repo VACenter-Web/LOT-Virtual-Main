@@ -427,6 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 43%;
   margin-top: 10%;
 }
+
 #hero .btn-get-started:hover {
   background: #192e70;
   border: 2px solid #192e70;
@@ -448,6 +449,24 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 24px;
   }
+
+  #hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    margin-top: 10%;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -577,6 +596,64 @@ section {
     margin: 0 48px 0 0;
     padding: 6px 18px;
   }
+
+  .about .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 12%;
+    text-align: center;
+  }
+
+  .about .content {
+    margin-bottom: 12%;
+    padding: 0 10%;
+    text-align: center;
+  }
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5%;
+    position: relative;
+    top: 5%;
+    text-align: center;
+  }
+  .about .content ul li {
+    padding-bottom: 10px;
+    margin-top: 5%;
+    position: relative;
+    top: 5%;
+    text-align: center;
+  }
+  .about .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #192e70;
+    margin-top: 5%;
+    position: relative;
+    top: 5%;
+    text-align: center;
+  }
+
+  .abt-img {
+    border-radius: 5%;
+    text-align: center;
+
+  }
+
+  .abt-img1 {
+    position: relative;
+    left: 2.4%;
+  }
+  
+  .abt-img3 {
+    position: relative;
+    left: 6%;
+  }
+
+  .abt-img2 {
+    position: relative;
+    right: 0.1%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -694,62 +771,77 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Courses
+# RANKS
 --------------------------------------------------------------*/
-.courses .course-item {
-  border-radius: 5px;
-  border: 1px solid #eef0ef;
-}
-.courses .course-content {
-  padding: 15px;
-}
-.courses .course-content h3 {
-  font-weight: 700;
-  font-size: 20px;
-}
-.courses .course-content h3 a {
-  color: #37423b;
-  transition: 0.3s;
-}
-.courses .course-content h3 a:hover {
-  color: #5fcf80;
-}
-.courses .course-content p {
-  font-size: 14px;
-  color: #777777;
-}
-.courses .course-content h4 {
-  font-size: 14px;
-  background: #5fcf80;
-  padding: 7px 14px;
-  color: #fff;
-  margin: 0;
-}
-.courses .course-content .price {
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  color: #37423b;
-}
-.courses .trainer {
-  padding-top: 15px;
-  border-top: 1px solid #eef0ef;
-}
-.courses .trainer .trainer-profile img {
-  max-width: 50px;
-  border-radius: 50px;
-}
-.courses .trainer .trainer-profile span {
-  padding-left: 10px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #5a6c60;
-}
-.courses .trainer .trainer-rank {
-  font-size: 18px;
-  color: #657a6d;
+.services .icon-box {
+  padding: 50px 20px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  text-align: center;
+  border: 1px solid #ebe6e4;
+  height: 220px;
+  position: relative;
+  background: #faf9f8;
+  border-radius: 15px;
 }
 
+.services .icon-box-last {
+  padding: 50px 20px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  text-align: center;
+  border: 1px solid #ebe6e4;
+  height: 220px;
+  position: relative;
+  background: #faf9f8;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  left: 105%;
+}
+.services .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+  background: #192e70;
+}
+.services .icon i {
+  color: #fff;
+  font-size: 24px;
+  line-height: 0;
+}
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.services .title a {
+  color: #343a40;
+}
+.services .icon-box:hover .icon {
+  background: #fff;
+  border: 2px solid #192e70;
+}
+.services .icon-box:hover .icon i {
+  color: #192e70;
+}
+.services .icon-box:hover .title a {
+  color: #192e70;
+}
+.services .description {
+  line-height: 24px;
+  font-size: 14px;
+}
 /*--------------------------------------------------------------
 # Trainers
 --------------------------------------------------------------*/
@@ -758,7 +850,7 @@ section {
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #eef0ef;
-  height: 70vh;
+  height: 75vh;
   border-radius: 5%;
 }
 
@@ -956,6 +1048,39 @@ section {
 }
 .events .card:hover .card-body .card-title a {
   color: #5fcf80;
+}
+
+@media (max-width: 768px) {
+  .events .card {
+    border: 0;
+    margin-bottom: 100px;
+    position: relative;
+    border-radius: 5%;
+    align-items: center;
+  }
+
+  .events .card-text {
+    color: #5e5e5e;
+    width: 50vw;
+    text-align: center;
+    font-size: 13px;
+
+  }
+
+  .events .last-card {
+    position: relative;
+    left: 0%;
+  }
+
+  .events .card-img {
+    width: calc(100% + 80px);
+    margin-left: 0;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+    border-radius: 3%;
+
+  }
 }
 
 /*--------------------------------------------------------------
