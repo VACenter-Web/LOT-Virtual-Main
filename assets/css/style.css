@@ -1522,12 +1522,12 @@ br {
 #footer .footer-top .footer-links ul li {
   padding: 10px 0;
   display: flex;
-  text-align: center;
+
 
 }
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
-  text-align: center;
+
 
 }
 #footer .footer-top .footer-links ul a {
@@ -1535,16 +1535,16 @@ br {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
-  text-align: center;
+
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
   color: #172e79;
-  text-align: center;
+
 }
 #footer .footer-newsletter {
   font-size: 15px;
-  text-align: center;
+  
 }
 #footer .footer-newsletter h4 {
   font-size: 16px;
@@ -1552,7 +1552,7 @@ br {
   color: #444444;
   position: relative;
   padding-bottom: 12px;
-  text-align: center;
+
 }
 #footer .footer-newsletter form {
   margin-top: 30px;
