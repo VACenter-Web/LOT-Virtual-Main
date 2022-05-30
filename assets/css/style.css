@@ -1039,7 +1039,7 @@ br {
 
 .events .last-card {
   position: relative;
-  left: 50%;
+  left: 52%;
 }
 .events .card-img {
   width: calc(100% + 60px);
@@ -1048,6 +1048,7 @@ br {
   z-index: 9;
   border-radius: 0;
   border-radius: 3%;
+  height: 50vh;
 }
 .events .card-img img {
   max-width: 100%;
