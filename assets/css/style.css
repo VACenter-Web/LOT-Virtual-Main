@@ -374,10 +374,12 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+
 #hero {
   width: 100%;
   height: 120vh;
-  background: url("https://media.discordapp.net/attachments/964805636875513916/969101587240861696/LOT_Virtual_Banner.png?width=1664&height=936") top center;
+  background: url("https://media.discordapp.net/attachments/964805636875513916/989238717757681674/LOTVWebsite_.png") top center;
   background-size: cover;
   position: relative;
 }
@@ -424,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-align: center;
   position: relative;
-  left: 43%;
+  left: 44.5%;
   margin-top: 10%;
 }
 
@@ -435,11 +437,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    background-size: contain;
   }
 }
+
 @media (max-width: 768px) {
   #hero {
     height: 100vh;
+    background-image: url("https://media.discordapp.net/attachments/964805636875513916/989206207791263775/InfiniteFlight_2022-06-12-07-52-24-01.jpeg?width=512&height=1138");
   }
   #hero h1 {
     font-size: 28px;
@@ -787,7 +792,7 @@ section {
   margin-bottom: 25px;
   text-align: center;
   border: 1px solid #ebe6e4;
-  height: 220px;
+  height: 230px;
   position: relative;
   background: #faf9f8;
   border-radius: 15px;
@@ -799,7 +804,7 @@ section {
   margin-bottom: 25px;
   text-align: center;
   border: 1px solid #ebe6e4;
-  height: 220px;
+  height: 230px;
   position: relative;
   background: #faf9f8;
   border-radius: 15px;
@@ -1105,7 +1110,7 @@ br {
     align-items: center;
   }
 
-  .events .card-text {
+  .events .cardz-text {
     color: #5e5e5e;
     width: 50vw;
     text-align: center;
@@ -1115,11 +1120,11 @@ br {
 
   .events .last-card {
     position: relative;
-    left: 0%;
+    left: 4%;
   }
 
   .events .card-img {
-    width: calc(100% + 80px);
+    width: calc(100% + 100px);
     margin-left: 0;
     overflow: hidden;
     z-index: 9;
